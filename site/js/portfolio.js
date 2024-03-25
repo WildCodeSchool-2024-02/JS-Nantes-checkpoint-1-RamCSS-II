@@ -55,5 +55,12 @@ modifyButton.addEventListener("click", function () {
 })
 
 
-// Try selecting the all li elements of list dev tool front.
-// Then create a for loop to replace li elements with your list of dev tool front by creating a list with 3 elements like VSCode, Github, Terminal.
+// Step 7 
+form.onsubmit = function (event) {
+    event.preventDefault();
+    const newLi = document.querySelector(".pink-text>ul>li");
+    const newTool = document.querySelector("#new-tool");
+    newLi.createElement = newTool;
+
+}
+// il faudrait utiliser inerHTML pour récupérer la valeur du nouvel élément et appendChild pour ajouter le nouvel élément dans la liste parent
