@@ -131,6 +131,36 @@ p {
 @media screen and (max-width: 700px) {
  #desktop {
 display: none;
+ }
+ section .desktop {
+  display: flex;
+  justify-content: center;
+}
 
 
- }}
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills-column{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+
+}
+  
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills-column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+ }
