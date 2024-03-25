@@ -30,7 +30,6 @@ body {
 
 header nav {
   display: flex;
-  justify-content: space-between;
   margin: var(--gutter) calc(var(--gutter) * 2);
 }
 
@@ -60,3 +59,14 @@ button:focus {
 #firstname {
   color: red;
 }  
+
+
+@media only screen and (min-width : 700px) {
+  /* Step 2 */
+  main>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

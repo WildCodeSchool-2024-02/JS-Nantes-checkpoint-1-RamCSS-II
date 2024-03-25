@@ -108,3 +108,11 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+
+@media only screen and (min-width : 700px) {
+  /* Step 2 */
+  header nav {
+    justify-content: space-between;
+  }
+}
