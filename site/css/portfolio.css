@@ -1,3 +1,4 @@
+
 :root {
   --radius: 12px;
 
@@ -107,4 +108,53 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+main section div h1 {
+  display: flex;
+  justify-content: center;
+}
+main section div h2 {
+  display: flex;
+  justify-content: center;
+}
+main section div img {
+  display: flex;
+  justify-content: center;
+}
+
+section .desktop {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills-flexbox {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+  /* .column {
+    display: flex; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+  } */
+}
+  
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills-flexbox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }
