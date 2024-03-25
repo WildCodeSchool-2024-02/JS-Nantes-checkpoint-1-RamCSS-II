@@ -7,14 +7,13 @@ avatar.addEventListener("click", () => {
     if (avatar.src == "http://127.0.0.1:5500/site/image/avatar-bis.png") {
         avatar.src = "./image/avatar.svg"
     } else {
-        console.log("movement")
         avatar.src = "./image/avatar-bis.png";
     }
 });
 
 
 
-// Step 2 
+// Step 2, 3, 4, 5 
 
 const nameButton = document.getElementById("name-editor-button");
 const firstname = document.getElementById("firstname");
@@ -44,10 +43,22 @@ nameButton.addEventListener("click", () => {
         htmlLinks[i].style.color = customColor;
      }
 
-
     firstname.innerText = prompt("what's your name, kid ?", "Francis XV");
     firstname.style.color = "white";
-
-
-
 })
+
+
+
+//Step 6
+
+const frontDevToolsButton = document.getElementById("front-dev-tools-button");
+const frontDevTools = document.getElementById("front-dev-tools");
+
+
+frontDevToolsButton.addEventListener("click",()=>{
+
+    frontDevTools.children[0].innerText="VsCode";
+    frontDevTools.children[1].innerText="Google";
+    frontDevTools.children[2].innerText="ChatGPT";
+
+});
