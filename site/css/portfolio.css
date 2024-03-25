@@ -207,6 +207,10 @@ header>nav>img {
     width: 80vw;
   }
 
+  .projects>p {
+    text-align: center;
+  }
+
   section>.desktop {
     display: none;
   }

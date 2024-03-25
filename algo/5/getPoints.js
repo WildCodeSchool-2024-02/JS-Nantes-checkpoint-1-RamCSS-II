@@ -11,8 +11,22 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:3"]
 */
 
-function getPoints(results) {
-  // Your code here !
+function getPoints(results) {// analyse le tableau par incrémentation de 0 à 10, chaque index done 1 score, score total = addition score, return results. Chaque tableau fait 10 matchs (index 0 à 9)
+  let score = 0
+  for (let i = 0; i < 9; i++) { //analyse le tableau par incrémentation de 0 à 10
+    const [scoreNous, scoreEux] = results[i].split(":").map(Number); // je sépare chaque index du tableaux en scoreNous , scoreEux en enlevant le :
+    if (scoreNous > scoreEux) { // Condition pour chaque situation : si chiffre de gauche > chiffre de droite =victoire ; si chiffre gauche = chiffre droite = nul ; si chiffre gauche < chiffre droite = défaite
+      score = +3; // Victoire
+    } else if (scoreNous === scoreEux) {
+      score = + 1; // Nul
+    } else if (scoreNous < scoreEux) {
+      score = + 0; // Défaite
+    }
+
+    return score;// NE MARCHE PAAAAAAS
+  }
 }
+console.log(getPoints(results));
+
 
 module.exports = getPoints;
