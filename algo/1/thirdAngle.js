@@ -6,8 +6,15 @@ thirdAngle(90, 30) doit retourner 60
 thirdAngle(20, 80) doit retourner 80
 */
 
+
 function thirdAngle(a, b) {
-  // Your code here !
+ const angle = parseInt(180 - (a + b)); // retourne l'angle C
+ if (angle >= 0){
+ return angle;
+ }
+ else {
+  return "un triangle ne peut pas avoir d'angle négatif :)";
+ }
 }
 
 module.exports = thirdAngle;
