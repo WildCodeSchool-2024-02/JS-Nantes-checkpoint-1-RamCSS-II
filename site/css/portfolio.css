@@ -135,4 +135,17 @@ p {
     display: block;
   }
 
+  /* Step 4 */
+  .skills {
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .skills>h2 {
+    /* This width makes the h2 take the whole width, forcing the sections that follows to place on a new row. */
+    width :100%;
+  }
+
 }
