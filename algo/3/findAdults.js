@@ -25,8 +25,37 @@ const persons = [
 
 */
 
+// function findAdults(persons) {
+//   let adult = age.filter >= 18;
+//   let men = sex.filter('male');
+//   let women = sex.filter('female');
+//   if (women == adult) { return new Array(); }
+//   else if (men == adult) { return new Array(); }
+// }
+
 function findAdults(persons) {
-  // Your code here !
-}
+  const adult = persons.filter(function (persons) {
+    return persons.age => 18
+});
+
+const women = persons.filter(function (persons) {
+  return objects.age => 18
+  });
+
+const men = persons.filter(function (persons) {
+  return objects.age => 18
+  });
+
+
+let adult = age.filter >= 18;
+let men = sex.filter('male');
+let women = sex.filter('female');
+if (women == adult) { return new Array(); }
+else if (men == adult) { return new Array(); }
+  }
+
+// filtrer tout les age qui sont égale ou supérieur à 18 , puis retourner un array  "age" contenant le resultat
+// recuperer le tableau "age" et filtrer les femmes, retourner un tableau "femme majeur"
+// recuperer le tableau "age" et filtrer les hommes, retourner un tableau "homme majeur"
 
 module.exports = findAdults;
