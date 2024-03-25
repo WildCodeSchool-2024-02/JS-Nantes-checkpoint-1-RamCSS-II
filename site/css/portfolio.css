@@ -17,6 +17,8 @@ img {
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
+  /* display: flex;
+  align-self: center; */
 }
 
 p {
@@ -25,7 +27,9 @@ p {
 
 .menu {
   display: flex;
+
   margin-bottom: var(--gutter);
+
 }
 
 .desktop {
@@ -107,4 +111,46 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media (min-width: 700px) {
+  .menu {
+    position: absolute;
+    right: 2rem;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    /* ajouter stretch */
+  }
+
+  #banner p {
+    padding-bottom: 15px;
+    /* margin: 0; */
+  }
+
+  #banner {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .desktop {
+    display: none;
+  }
+
 }
