@@ -30,9 +30,21 @@ p {
 
 .desktop {
   margin: 0;
+  display: flex;
+  justify-content: center;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
+
+/* ---- responsive desktop ---- */
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
+
+/* --- fin Responsive Desktop ---- */
 
 .description {
   color: var(--light);
@@ -55,6 +67,11 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+}
+
+.skills--position{
+  display: flex;
+  flex-direction: column;
 }
 
 .skills--title {
@@ -92,6 +109,28 @@ p {
   color: var(--lightWildColor);
 }
 
+/* ---- reponsive skills ---- */
+
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .skills--position {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .column{
+    width: 100%;
+  }
+}
+
+/* ---- fin responsive skills ---- */
+
 .projects a {
   color: var(--purple);
 }
@@ -107,4 +146,25 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+/* ---- respondive projects ---- */
+
+@media screen and (min-width: 700px) {
+ .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .all--boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  gap: 10px;
+ }
+
+ .box{
+  width: 100%;
+ }
 }
