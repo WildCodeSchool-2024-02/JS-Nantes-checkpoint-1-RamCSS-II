@@ -28,6 +28,11 @@ p {
   margin-bottom: var(--gutter);
 }
 
+main>section{
+text-align: center;
+}
+
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -55,6 +60,7 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  flex-direction: row-reverse;
 }
 
 .skills--title {
@@ -107,4 +113,33 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media (min-width: 700px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills{
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .column{
+    width: 30vw;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .desktop{
+    display: none;;
+  }
+
+  .skills{
+    display: flex;
+    flex-direction:column-reverse;
+  }
 }

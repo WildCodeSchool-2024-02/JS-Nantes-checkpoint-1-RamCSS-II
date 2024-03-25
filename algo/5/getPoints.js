@@ -13,6 +13,24 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 
 function getPoints(results) {
   // Your code here !
-}
+
+  const victory = 0;
+  const nul = 0;
+  const loose = 0;
+// parcourir le tableau 
+// comprarer les deux chiffre ( si ils sont identique incrementer la variable nul)
+// comprarer les deux chiffre ( si le 1e est plus grand alors  victory est incrementer de 3)
+//sinon on fait rien
+
+
+ if(a === b){
+  nul++;
+ }else if(a > b ){
+victory = victory + 3;
+ }
+
+
+  return 
+};
 
 module.exports = getPoints;
