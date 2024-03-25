@@ -33,14 +33,14 @@ function findAdults(persons) {
   const maleArray = [];
 
   persons.forEach(element => {
-      if (element.sex == 'female' && element.age >= 18) {
-          femaleArray.push(element);
-      }
-      if (element.sex == 'male' && element.age >= 18) {
-          maleArray.push(element);
-      }
+    if (element.sex == 'female' && element.age >= 18) {
+      femaleArray.push(element);
+    }
+    if (element.sex == 'male' && element.age >= 18) {
+      maleArray.push(element);
+    }
   });
-  newPersonArray.push(femaleArray,maleArray);
+  newPersonArray.push(femaleArray, maleArray);
   return newPersonArray;
 }
 
