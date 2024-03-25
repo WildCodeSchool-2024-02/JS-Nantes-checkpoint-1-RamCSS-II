@@ -51,11 +51,24 @@ a {
 button:focus {
   outline: none;
 }
-
+.purple-bg {
+  background-color: var(--purple);
+}
 .purple {
   color: var(--purple);
+}
+#avatar,
+#firstname{
+  cursor: pointer;
 }
 
 #firstname {
   color: red;
-}  
+} 
+#firstname {
+  color: red;
+} 
+#firstname.white, 
+.white {
+  color: var(--light);
+}
