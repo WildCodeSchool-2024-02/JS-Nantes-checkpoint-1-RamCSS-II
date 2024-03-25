@@ -137,6 +137,11 @@ p {
     align-items: center;
   }
 
+  section.column {
+    /* make both cards look equally as large */
+    min-width : 30vw;
+  }
+
   /* Step 3 */
   #desktop-image {
     display: block;
@@ -150,9 +155,21 @@ p {
     justify-content: center;
   }
 
-  .skills>h2 {
-    /* This width makes the h2 take the whole width, forcing the sections that follows to place on a new row. */
+  .skills>h2, .projects>h2,.projects p {
+    justify-self: center;
+    text-align: center;
     width :100%;
+    margin:2rem;
   }
+
+  /* Step 8 */
+
+  .projects {
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
 
 }
