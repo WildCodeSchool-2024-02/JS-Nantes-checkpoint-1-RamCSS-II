@@ -24,6 +24,11 @@ modifyButton.addEventListener("click", () => {
     pinkSections.forEach((section) => {
         section.style.backgroundColor = "#750ff7"
     })
+    let purpleLinks = document.querySelectorAll(".navLink");
+    purpleLinks.forEach((link) => {
+        link.style.color = "#750ff7"
+    })
+
 
 });
 
