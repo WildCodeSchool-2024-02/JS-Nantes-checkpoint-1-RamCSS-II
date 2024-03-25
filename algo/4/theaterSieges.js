@@ -18,7 +18,7 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  // Your code here !
+
 }
 
 module.exports = theaterSieges;
