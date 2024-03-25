@@ -27,6 +27,13 @@ const persons = [
 
 function findAdults(persons) {
   // Your code here !
+  const copyArray = findAdults; // cette variable va permettre de conserver le tableau d'origine
+
+  const femaleAdults = persons.filter(persons => (persons.age >= 18) && (persons.sex === 'female'));
+
+  const maleAdults = persons.filter(persons => (persons.age >= 18) && (persons.sex === 'male'));
+
+  return [femaleAdults, maleAdults];
 }
 
 module.exports = findAdults;
