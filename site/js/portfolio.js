@@ -5,7 +5,7 @@ avatarImg.addEventListener("click", function () {
     avatarImg.src = "./image/avatar.svg"
 })
 
-// Step 2 and 3 and 4
+// Step 2 and 3 and 4 and 5
 // par soucis de temps, le bouton n'a pas le CSS attendu
 const nameButton = document.querySelector("#name-button");
 
@@ -13,8 +13,10 @@ const nameButton = document.querySelector("#name-button");
 nameButton.addEventListener("click", function () {
     const sectionBackgroundColor = document.querySelectorAll(".pink-bg");
     const textColor = document.querySelectorAll(".pink-text");
+    const linkColor = document.querySelectorAll(".nav-link");
     const newColor = prompt("Enter your color :");
-    console.log(textColor);
+    console.log("text rose :", textColor);
+    console.log("Liens", linkColor);
 
     for (let i = 0; i <= sectionBackgroundColor.length; i++) {
         sectionBackgroundColor[i].style.backgroundColor = newColor;
@@ -22,6 +24,10 @@ nameButton.addEventListener("click", function () {
 
     for (let i = 0; i <= textColor.length; i++) {
         textColor[i].style.color = newColor;        // la couleur n'est pas prise en compte
+    }
+
+    for (let i = 0; i <= linkColor.length; i++) {
+        linkColor[i].style.color = newColor;        // la couleur n'est pas prise en compte
     }
 })
 
@@ -33,3 +39,21 @@ nameButton.addEventListener("click", function () {
     firstName.innerHTML = questionName;
     firstName.style.color = "white";
 })
+
+// Step 6 
+const modifyButton = document.querySelector("#modify-dev-tools");
+
+modifyButton.addEventListener("click", function () {
+    const liElements = document.querySelectorAll("#front-dev-tools>li");
+    console.log("Liste outils", liElements);
+
+    for (let i = 0; i <= liElements.length; i++) {
+        liElements[0].innerHTML = "VS Code";
+        liElements[1].innerHTML = "Github";
+        liElements[2].innerHTML = "Terminal";
+    }
+})
+
+
+// Try selecting the all li elements of list dev tool front.
+// Then create a for loop to replace li elements with your list of dev tool front by creating a list with 3 elements like VSCode, Github, Terminal.
