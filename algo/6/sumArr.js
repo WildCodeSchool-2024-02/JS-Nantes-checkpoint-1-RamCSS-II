@@ -10,7 +10,24 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 */
 
 function sumArr(arrayA, arrayB) {
-  // Your code here !
+  // check that both arrays have equal length, otherwise it makes no sense. EDIT : i misread. this has to be recoded. 
+  if (arrayA.length !== arrayB.length) {return null};
+
+  const result =[];
+
+  for (let i=0;i<arrayA.length;i++){
+
+    // read both values
+    A = parseInt(arrayA[i]);
+    B = parseInt(arrayB[i]);
+
+    result.push((A+B).toString());
+
+
+  }
+return result;
 }
+
+//console.log(sumArr( ["1", "2", "3"], ["2", "4", "1"] ));
 
 module.exports = sumArr;

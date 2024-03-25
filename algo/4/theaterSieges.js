@@ -18,7 +18,18 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  // Your code here !
+  const siegesList = [];
+  for (let i = 1; i < 27; i++) {
+    // this will store the values for each row of seats, in order to respect the desired output formatting.
+    const siegesRow = [];
+    for (let j = 1; j < 101; j++) {
+      siegesRow.push(i + "-" + j);
+    }
+    siegesList.push(siegesRow);
+  }
+  return siegesList;
 }
+
+console.log(theaterSieges());
 
 module.exports = theaterSieges;

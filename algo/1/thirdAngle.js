@@ -7,7 +7,11 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  //Need to check if a and b are between 0 and 90, otherwise return NULL
+  return 180 - a - b;
 }
+
+
+
 
 module.exports = thirdAngle;
