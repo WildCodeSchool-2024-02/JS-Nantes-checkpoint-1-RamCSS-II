@@ -59,3 +59,9 @@ button:focus {
 #firstname {
   color: red;
 }  
+.avatar1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
