@@ -26,7 +26,17 @@ const persons = [
 */
 
 function findAdults(persons) {
-  // Your code here !
+  const adults = [[], []] // Etape 1 création d'un tableau avec 2 sous tableau 1 pour femmes adutes, 1 pour hommes adultes
+  persons.forEach(function (trieAdulte) { // Etape 2 je parcours le tableau persons pour executer une instruction conditionnelle
+    if (trieAdulte.age >= 18) {// je trie 1 premiere fois pour prendre que les adultes
+      if (trieAdulte.sex === "female") {
+        adults[0].push(trieAdulte); // si triAdulte >=18 + si triAdulte == female alors push dans le tableau, sous tableau index 0 ([[0],[1]])
+      }
+      else if (trieAdulte.sex === "male") { // idem pour les hommes sous tableau index 1
+        adults[1].push(trieAdulte);
+      }
+    }
+  });
+  return adults; // j'appelle le tableau remplis
 }
-
 module.exports = findAdults;
