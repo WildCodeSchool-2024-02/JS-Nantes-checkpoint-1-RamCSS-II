@@ -51,12 +51,21 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: calc(var(--gutter) * 3.75);
+  padding: calc(var(--gutter) * 5);
 }
 
 .description p {
   width: 60%;
   text-align: var(--textAlign);
+}
+
+.btn-name {
+  background-color: var(--lightWildColor);
+  color: white;
+  border: 1px white solid;
+  padding: .5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
 }
 
 .pink-bg {
