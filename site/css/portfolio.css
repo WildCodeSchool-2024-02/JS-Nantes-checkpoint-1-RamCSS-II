@@ -114,6 +114,13 @@ p {
   display: none;
 }
 
+/* Step 5 */
+.skills {
+  display : flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
 
 @media only screen and (min-width : 700px) {
 
