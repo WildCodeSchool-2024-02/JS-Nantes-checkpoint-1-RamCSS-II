@@ -31,17 +31,17 @@ nameButton.addEventListener("click", () => {
 
     // part about the colors
     // section and footer
-    for (let i=0; i<elementsWithPinkBackground.length;i++) {
-       elementsWithPinkBackground[i].style.backgroundColor = customColor;
+    for (let i = 0; i < elementsWithPinkBackground.length; i++) {
+        elementsWithPinkBackground[i].style.backgroundColor = customColor;
     }
     //titles
-    for (let i=0; i<elementsWithPinkText.length;i++) {
+    for (let i = 0; i < elementsWithPinkText.length; i++) {
         elementsWithPinkText[i].style.color = customColor;
-     }
-     //html links
-     for (let i=0; i<htmlLinks.length;i++) {
+    }
+    //html links
+    for (let i = 0; i < htmlLinks.length; i++) {
         htmlLinks[i].style.color = customColor;
-     }
+    }
 
     firstname.innerText = prompt("what's your name, kid ?", "Francis XV");
     firstname.style.color = "white";
@@ -55,10 +55,28 @@ const frontDevToolsButton = document.getElementById("front-dev-tools-button");
 const frontDevTools = document.getElementById("front-dev-tools");
 
 
-frontDevToolsButton.addEventListener("click",()=>{
+frontDevToolsButton.addEventListener("click", () => {
 
-    frontDevTools.children[0].innerText="VsCode";
-    frontDevTools.children[1].innerText="Google";
-    frontDevTools.children[2].innerText="ChatGPT";
+    frontDevTools.children[0].innerText = "VsCode";
+    frontDevTools.children[1].innerText = "Google";
+    frontDevTools.children[2].innerText = "ChatGPT";
 
 });
+
+
+
+// Step 7 
+
+const backDevToolsButton = document.getElementById("back-dev-tools-button");
+const backDevTools = document.getElementById("back-dev-tools");
+const newBackDevToolInput = document.getElementById("new-back-dev-tool");
+
+backDevToolsButton.addEventListener("click", () => {
+
+    const newBackDevTool = document.createElement("li");
+    newBackDevTool.innerText = newBackDevToolInput.value;
+
+    backDevTools.appendChild(newBackDevTool);
+
+});
+
