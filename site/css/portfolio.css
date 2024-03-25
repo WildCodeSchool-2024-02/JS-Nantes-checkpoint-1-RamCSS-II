@@ -16,7 +16,7 @@
   --darkColor: #000000;
   --textColor: #39424e;
   --wildColor: #f76c6c;
-  --lightWildColor: #750ff7;
+  --lightWildColor: #ffc0cb;
   --light: #f5f5f5;
   --purple: #750ff7;
   --videoBorderColor: #d4d4d4;
@@ -87,6 +87,9 @@ header>nav>img {
 /* Titre + description */
 .purple-bg {
   /* valable pour le footer */
+  background-color: var(--purple);
+}
+.pink-bg {
   background-color: var(--lightWildColor);
 }
 
@@ -107,6 +110,17 @@ header>nav>img {
   width: 60%;
   text-align: var(--textAlign);
 }
+
+.description>button {
+  font-family: "Dosis", sans-serif;
+  font-size: 1rem;
+  color: white;
+  border: var(--borderColor);
+  width: 10vw;
+  height: 5vh;
+  border-radius: 10px;
+}
+
 
 /* Partie articles de skills */
 
@@ -180,7 +194,11 @@ header>nav>img {
 }
 
 .purple-text {
-  color: var(--lightWildColor);
+  color: var(--purple);
+}
+
+.pink-text {
+  color : var(--lightWildColor)
 }
 
 @media screen and (width <=1024px) {
